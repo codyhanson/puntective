@@ -1,0 +1,761 @@
+a, eh
+acts, ax
+ad, add
+adds, ads, adze
+ade, aid, aide
+aerie, airy
+aero, arrow
+affect, effect
+ail, ale
+air, are, e'er, ere, err, heir
+aisle, I'll, isle
+ait, ate
+all, awl
+allowed, aloud
+altar, alter
+an, Ann, Anne
+ant, aunt
+ante, auntie
+arc, ark
+ascent, assent
+ate, eight
+auger, augur
+aught, ought,
+aural, oral
+auricle, oracle
+away, aweigh,
+awed, odd
+aweful, awful, offal
+aye, eye, I
+ayrie, aerie
+Baal, bail, bale
+bailed, baled
+bailee, bailey, bailie
+bailer, bailor, baler
+bailing, baling
+bait, bate
+baited, bated
+baiting, bating
+baize, bays, beys
+bald, balled, bawled
+ball, bawl
+band, banned
+bans, banns
+bard, barred
+bare, bear
+bark, barque
+baron, barren
+Barry, berry, bury
+basal, basil, Basel
+base, bass
+based, baste
+bases, basis, basses
+bask, basque
+bat, batt
+baud, bawd
+bay, bey
+be, Bea, bee
+beach, beech
+beaf, beef
+bean, been
+beat, beet
+beau, bow
+beaut, butte
+been, bin
+beer, bier
+bel, Bel, bell, belle
+berth, birth
+besot, besought
+better, bettor
+bight, bite, byte
+billed, build
+bite, byte
+bit, bitt
+blew, blue
+bloc, block
+boar, Boer, bore
+board, bored
+boarder, border
+bode, bowed
+bold, bowled
+bolder, boulder
+bole, boll, bowl
+boos, booze
+born, borne, bourn
+borough, burrow
+bough, bow
+bouy, boy
+bot, bought
+bra, braw
+braid, brayed
+braise, brays
+brake, break
+breach, breech
+bread, bred
+brewed, brood
+brews, bruise
+bridal, bridle
+broach, brooch
+brows, browse
+bundt, bunt
+burger, burgher
+bus, buss
+bussed, bust
+but, butt
+buy, by, bye
+buyer, byre
+C, sea, see
+cache, cash
+cached, cashed
+cain, cane
+calendar, calender
+call, caul, col
+caller, collar
+can, khan
+can't, cant
+cannon, canon
+canter, cantor
+canvas, canvass
+capital, capitol
+carat, caret, carrot, karat
+carol, carrel
+carpal, carpel
+cartel, kartel
+cast, caste
+caster, castor
+catch, ketch
+caught, cot
+cause, caws
+cay, key, quay
+cedar, seeder
+cede, seed
+ceding, seeding
+ceiling, sealing
+cel, cell, sell
+cellar, seller
+censer, censor, sensor
+census, senses
+cent, scent, sent
+cents, scents, sense
+cere, sear, seer, sere
+cereal, serial
+Ceres, series
+cession, session
+chalk, chock
+chance, chants
+chard, charred
+chased, chaste
+cheap, cheep
+check, cheque, Czech
+chews, choose
+Chile, chili, chilly
+choir, quire
+choler, collar
+choral, coral
+chorale, corral
+chord, cord, cored
+chute, shoot
+cite, sight, site
+cited, sighted, sited
+clack, claque
+Claus, clause, claws
+clew, clue
+click, clique
+climb, clime
+close, clothes
+coal, cole
+coaled, cold
+coarse, course
+coat, cote
+coax, cokes
+cocks, cox
+coddling, codling
+coffer, cougher
+coin, quoin
+colonel, kernel
+complacence, complaisance
+complacent, complaisant
+complement, compliment
+con, kahn
+conch, conk
+conquer, conker
+coo, coup
+copes, copse
+copped, copt, cops, copse
+core, corps
+cosign, cosine
+council, counsel
+councillor, counsellor
+craft, kraft
+crater, krater
+Crays, craze
+creak, creek
+crewed, crude
+crewel, cruel
+crews, cruise
+crone, krone
+cue, Kew, queue
+curd, Kurd
+currant, current
+curser, cursor
+cygnet, signet
+cymbal, symbol
+dam, damn
+dammed, damned
+darn, darne
+days, daze
+dear, deer
+defused, diffused
+dew, do, due
+die, dye
+died, dyed
+dies, dyes
+dine, dyne
+dire, dyer
+disc, disk
+discreet, discrete
+discussed, disgust
+do, doe, dough
+doc, dock
+does, doughs, doze
+done, dun
+dos, dues
+draft, draught
+dual, duel
+earl, URL
+earn, erne, urn
+elicit, illicit
+elude, illude
+enquire, inquire
+epic, epoch
+eunuchs, Unix
+ewe, yew, you
+ewes, use, yews, youse
+eyelet, islet
+facts, fax
+fain, feign
+faint, feint
+fair, fare
+fairing, faring
+fairy, ferry
+faker, fakir
+farrow, pharoah
+faux, foe
+fawned, fond
+fated, feted
+fay, Faye, fey
+fays, faze, phase
+fazed, phased
+feat, feet
+ferrate, ferret
+feted, feated
+few, phew
+fennel, phenol
+fie, phi
+file, phial
+fillip, Philip
+fills, fils
+filter, philter
+fin, Finn
+find, fined
+finish, Finnish
+fir, fur, furr
+fisher, fissure
+fizz, phiz
+flair, flare
+flea, flee
+flecks, flex
+flew, flu, flue
+Flo, floe, flow
+flocks, phlox
+floes, flows
+floor, fluor
+flour, flower
+foaled, fold
+for, fore, four
+forego, forgo
+foreword, forward
+fort, forte
+forth, fourth
+foul, fowl
+freed, Fried
+frees, freeze, frieze
+friar, fryer
+frose, Froese
+gaff, gaffe
+gage, gauge
+Gail, gale, Gael
+gait, gate
+gaited, gated
+galley, gally
+gallop, galop
+gays, gaze
+gene, jean
+gild, gilled, guild
+gilt, guilt
+gin, jinn
+gnawed, nod
+gneiss, nice
+gnu, knew, new, nu
+gnus, news
+gored, Gord, gourd
+gorilla, guerrilla
+grade, grayed
+graft, graphed
+grate, great
+grays, graze
+grease, Greece
+greave, grieve
+greaves, grieves
+grill, grille
+grisly, grizzly
+groan, grown
+guessed, guest
+guide, guyed
+guise, guys
+gunnel, gunwale
+gym, Jim
+hail, hale
+hair, hare
+hairy, Harry, harry
+hall, haul
+halve, have
+halves, haves
+hammock, hummock
+hangar, hanger
+Harold, herald
+hart, heart
+hay, hey
+hays, haze
+he'd, heed
+he'll, heal, heel
+he'll, hill
+hear, here
+heard, herd
+heigh, hi, hie, high
+heroin, heroine
+hew, hue, Hugh
+hi, high
+hide, hied
+higher, hire
+him, hymn
+ho, hoe
+hoar, whore
+hoard, horde, whored
+hoarse, horse
+hoes, hose
+hold, holed
+hole, whole
+holey, holy, wholly
+hoop, whoop
+hostel, hostile
+hour, our
+hours, ours
+humerus, humourous
+idle, idol, idyl
+in, inn
+inc, ink
+incite, insight
+innocence, innocents
+inns, ins
+it's, its
+jam, jamb
+jewel, joule
+juggler, jugular
+knag, nag
+knap, nap
+knavep, nave
+knead, kneed, need
+kneel, Neil
+knell, Nell
+knickers, nickers
+knight, night, nite
+knit, nit
+knob, nob
+knock, nock
+knoll, Noel
+knot, naught, not, nought
+knotty, naughty
+know, no
+knows, noes, nose
+lacks, lax
+laches, latches
+lade, laid
+lain, lane
+lam, lamb
+lama, llama
+laps, lapse
+lay, lei
+lays, laze, leis
+lea, lee, li
+leach, leech
+lead, led
+leak, leek
+lean, lien
+leas, lees
+leased, least
+lends, lens
+lessen, lesson
+liar, lyre
+lichen, liken
+lie, lye
+lieu, loo, Lou
+light, lite
+lightening, lightning
+limb, limn, Lim
+limbs, limns
+links, lynx
+literal, littoral
+lo, low
+load, lode, lowed,
+loan, lone
+loch, lock, lough
+lochs, locks, loughs, lox
+loon, lune
+loop, loupe
+loos, lose
+loot, lute
+lumbar, lumber
+mach, mock
+made, maid
+mail, male
+main, mane
+maize, Mays, maze
+mall, maul, moll
+manner, manor
+mantle, mantel
+marc, mark, marque
+marks, Marx
+marquee, marquis
+marry, merry
+marshall, martial
+massed, mast
+me, mi
+mean, mein
+meat, meet, mete
+medal, meddle
+men's, mends
+metal, mettle
+meter, metre
+mew, mu
+mewl, mule
+mews, muse
+might, mite
+mince, mints
+mind, mined
+miner, minor
+mistle, missile, missal, missel
+missed, mist, Myst
+misses, Mrs.
+moan, mown
+moat, mote
+mode, mowed
+moiré, moray
+moo, moue
+mood, mooed
+moor, more
+moose, mousse
+moral, morel
+morn, mourn
+morning, mourning
+muscle, mussel
+mussed, must
+mustard, mustered
+naval, navel
+nay, neigh, neé
+nays, neighs
+neap, neep
+none, nun
+oar, or, ore
+oh, owe
+ohs, owes
+one, won
+oohs, ooze
+ordinance, ordnance
+overdo, overdue
+paced, paste
+packed, pact
+pail, pale
+pain, pane
+pair, pare, pear
+palate, pallet, pallette
+pall, Paul, pawl
+pare, pear, pere
+passed, past
+patience, patients
+pause, paws
+pawned, pond
+pea, pee
+peace, piece
+peak, peek, pique
+peal, peel
+pealed, peeled
+pearl, purl, pearl, Perl
+peat, Pete
+pedal, peddle
+peer, pier
+pencil, pensil
+per, purr
+pi, pie
+picks, pyx
+picnic, pyknic
+pieced, piste
+pincer, pincher, pinscher
+pistil, pistol
+place, plaice
+plain, plane
+plait, plate
+planar, planer
+pleas, please
+pleural, plural
+plum, plumb
+polar, poler
+pole, Pole, poll
+poled, polled
+pone, pony
+poor, pore, pour
+popery, potpourri
+pored, poured
+practice, practise
+praise, prays, preys
+pray, prey
+precedence, precedents, presidents
+presence, presents
+pride, pryed
+pries, prize
+prince, prints
+principal, principle
+profit, prophet
+pros, prose
+psalter, salter
+pshaw, Shaw
+psi, sigh, xi
+quarts, quartz
+queam, queen
+quince, quints
+rabbet, rabbit
+rack, wrack
+racket, racquet
+rain, reign, rein
+raise, rays, Ray's, raze
+rap, wrap
+rapped, rapt, wrapped, wrapt
+ray, re
+read, red
+read, rede, reed
+reading, reeding
+real, reel
+recede, reseed
+reck, wreck
+reek, wreak
+resinate, resonate
+resisters, resistors
+rest, wrest
+retch, wretch
+review, revue
+rex, wrecks
+rheum, room
+rheumy, roomie, roomy
+rho, roe, row
+rhumb, rum
+rhyme, rime
+rick, Rick, wrick
+rigger, rigor
+right, rite, wright, write
+ring, wring
+rise, ryes
+road, rode, rowed
+roam, Rome
+roil, royal
+role, roll
+rood, rude, rued
+roomer, rumour
+root, route
+rose, rows
+rot, wrought
+rote, wrote
+rough, ruff
+rout, route
+roux, rue
+rude, rued
+rung, wrung
+rye, wry
+sachet, sashay
+sacks, sax
+sail, sale
+sane, seine
+saner, seiner
+saver, savour
+sawed, sod
+scene, seen
+scull, skull
+seal, seel
+seam, seem
+seamen, semen
+seams, seems
+sear, seer
+seas, sees, seize
+sects, sex
+seek, Sikh
+serf, surf
+serge, surge
+sew, so, soh, sow
+sick, Sikh
+sol, sole, soul
+sewed, sowed
+sewer, sower
+sewn, sown
+sewer, suer
+shake, sheik
+shall, shell
+she'll, shill
+shear, sheer
+sheave, shiv
+shoe, shoo
+shore, sure
+sic, sick
+sics, six
+side, sighed
+sighs, size
+sign, sine
+sink, synch
+Sioux, sou, sough, sue
+slay, sleigh
+sleight, slight
+slew, slough, slue
+sloe, slow
+soar, sore
+soared, sword
+solace, soulless
+sole, soul
+some, sum
+son, sun
+sonny, sunny
+soot, suit
+sordid, sorted
+spade, spayed
+spoor, spore
+staid, stayed
+stair, stare
+stake, steak
+stalk, stock
+statice, status
+stationary, stationery
+steal, steel
+step, steppe
+sticks, Styx
+stile, style
+stoop, stoup
+straight, strait
+succor, sucker
+suede, swayed
+suite, sweet
+summary, summery
+sundae, Sunday
+surplice, surplus
+tach, tack
+tacked, tact
+tacks, tax
+tail, tale
+tailer, tailor
+talk, tok
+taper, tapir
+tare, tear
+tares, tears
+taught, taut
+tea, tee, ti
+team, teem
+teaming, teeming
+tear, tier
+teas, tease, tees
+tenner, tenor
+tense, tents
+tern, terne, turn
+Thai, tie
+the, thee
+their, th'air, there, they're
+threw, through
+throe, throw
+throne, thrown
+thyme, time
+tic, tick
+tide, tied
+tighten, titan
+timber, timbre
+tire, tyre
+to, too, two
+toad, toed, towed
+tocsin, toxin
+toe, tow
+told, tolled
+tole, toll
+ton, Tun, tonne
+tongue, tung
+toon, tune
+tort, torte
+tough, tuff
+tracked, tract
+tray, trey
+troop, troupe
+trooper, trouper
+trussed, trust
+vain, vane, vein
+vale, veil, vail
+vary, very
+verses, versus
+vial, vile, viol
+vice, vise
+WACs, wax, whacks
+wade, weighed
+wail, wale, whale
+wails, wales, whales, Wales
+wain, wane, Wayne
+waist, waste
+wait, weight
+waive, wave
+waiver, waver
+walk, wok
+want, wont
+war, wore
+ware, wear, where
+warn, worn
+warrantee, warranty
+warship, worship
+wary, wherry
+Watt, what
+way, weigh, whey
+we, wee
+weal, we'll, wheel
+we'd, weed
+weir, we're
+were, whir
+we've, weave
+weak, week
+weal, wheel
+weald, wheeled, wield
+weather, wether, whether
+weld, welled
+wen, when
+wet, whet
+what, wot
+which, witch
+whig, wig
+while, wile
+whiled, wild
+whine, wine
+whined, wind, wined, wynd
+whirled, world
+whirred, word
+whit, wit
+whither, wither
+who's, whose
+whoa, woe
+why, wye
+won't, wont
+wood, would
+worst, wurst
+y'all, yawl
+yack, yak
+yoke, yolk
+yore, you're, your
+you'll, yule
