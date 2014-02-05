@@ -1,2 +1,26 @@
-\section{Proposed Methodology}
-methodology
+
+\section{Proposed Methodology and Heuristics}
+The first step will be to read in the words of the text under examination. The first naive approach will to just count the frequency of each word in a 'bag of words' approach. This will be simple to implement initially, and won't require deep knowledge of natural language processing (NLP) algorithms that would be required to parse the sentence into a tree-like structure. Once the bag of words is constructed we can apply several proposed heuristics.
+
+If the word frequency counting proves to not be powerful enough to capture the essence of the text, NLP algorithms such as those demonstrated by \cite{stanfordparser} will be researched in order to augment the approach. 
+
+\subsection{Odd Hyphenations}
+A characteristic of puns that the authors have noticed is that they can sometimes contain 'odd' hypenations, or more precisely, hypenations of words that are not commonly seen.
+
+Atheism is a non-prophet organization.	
+
+A bicycle can't stand on its own because it is two-tired.
+
+\subsection{Homophones}
+Puns often of homophones in them. A homophone is defined as a 
+
+\subsection{Dictionary Definitions}
+
+I used to be addicted to soap, but I'm clean now.
+
+\subsection{One letter mutations}
+
+Did you see the movie about the hot dog? It was an Oscar Wiener.
+
+\subsection{Synthesized speech with dictionary search}
+The roundest knight at king Arthur's round table was Sir Cumference.
