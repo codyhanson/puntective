@@ -4,27 +4,60 @@ The first step will be to read in the words of the text under examination. The f
 
 If the word frequency counting proves to not be powerful enough to capture the essence of the text, NLP algorithms such as those demonstrated by \cite{stanfordparser} will be researched in order to augment the approach. 
 
+In order to maximize development speed, and focus on actually solving the problems, we will use simple console based programs that leverage a scripting language such as Python. If needed, we will organize our backing data into a SQLite database, to minimize complexity and enable easy sharing with other academics. SQLite will also provide for a powerful querying mechanism while implementing code.
+
 \subsection{Odd Hyphenations}
-A characteristic of puns that the authors have noticed is that they can sometimes contain 'odd' hypenations, or more precisely, hypenations of words that are not commonly seen.
+A characteristic of puns that the authors have noticed is that they can sometimes contain 'odd' hyphenations, or more precisely, hyphenations of words that are not commonly seen.
 
-Atheism is a non-prophet organization.	
+\begin{figure}[h]
+  \caption{Puns with Odd Hyphenations}
+  \emph{Atheism is a non-prophet organization.}
+  \emph{A bicycle can't stand on its own because it is two-tired.}
+ \label{oddhyphen}
+\end{figure}
 
-A bicycle can't stand on its own because it is two-tired.
-
-In these examples 'non-prophet' (rather than 'non-profit') and 'two-tired' (rather than 'too-tired') are hyphenations which most humans would deem as atypical. My idea would be to look for hyphenated phrases in a dictionary, or other datastore of figures of speech, and if the phrase isn't found, then we can perhaps make the assumption that it is a form of wordplay. 
+In Figure~\ref{oddhyphen}, 'non-prophet' (rather than 'non-profit') and 'two-tired' (rather than 'too-tired') are hyphenations which most humans would deem as atypical. My idea would be to look for hyphenated phrases in a dictionary, or other datastore of figures of speech, and if the phrase isn't found, then we can perhaps make the assumption that it is a form of wordplay. 
 
 \subsection{Homophones}
-Puns often of homophones in them. A homophone is defined as a 
+Puns often of homophones in them. A homophone is defined as being each of two or more words having the same pronunciation but different meanings, origins, or spelling, e.g., new and knew
+
+\begin{figure}[h]
+  \caption{Pun with Homophones}
+  \emph{What did the grape say when it got stepped on? Nothing - but it let out a little whine.}
+ \label{punhomophone}
+\end{figure}
+
+In Figure~\ref{punhomophone}, the wordplay using homophones is 'whine' which is a play on 'wine' which is related to 'grape'. By looking for homophones of 'whine', we would be led to 'wine', which we could then make a linkage to grapes and winemaking, using a dictionary or encyclopedia.
 
 \subsection{Dictionary Definitions}
 
-I used to be addicted to soap, but I'm clean now.
+\begin{figure}[h]
+  \caption{Pun with terms linked by dictionary definitions}
+  \emph{I used to be addicted to soap, but I'm clean now.}
+ \label{addicted}
+\end{figure}
 
-In this pun, we can see some key words, 'addicted', 'clean' and 'soap' have the connections between them that constitute a pun. For this example, we would process 'addicted', and possibly find references to 'clean', and the dictionary definition of 'soap' could also have references to 'clean'. When we see that 'clean' has different definitions, with rather disparate meaning, we may be able to glean that there is a pun present.
+In Figure~\ref{addicted}, we can see some key words, 'addicted', 'clean' and 'soap' have the connections between them that constitute a pun. For this example, we would process 'addicted', and possibly find references to 'clean', and the dictionary definition of 'soap' could also have references to 'clean'. When we see that 'clean' has different definitions, with rather disparate meaning, we may be able to glean that there is a pun present.
 
 \subsection{One letter mutations}
 
-Did you see the movie about the hot dog? It was an Oscar Wiener.
+\begin{figure}[h]
+  \caption{Pun with relevant 1 letter mutation}
+  \emph{Did you see the movie about the hot dog? It was an Oscar Wiener.}
+ \label{punmutation}
+\end{figure}
+
+In Figure~\ref{punmutation} it can be seen that `Wiener'  is one letter removed from being the word 'Winner', which is an appropriate reference to movies and the Oscar's awards show. By looking for other words which have a single letter different, it can help us to make linkages to the other parts of the sentence, using our other techniques.
 
 \subsection{Synthesized speech with dictionary search}
-The roundest knight at king Arthur's round table was Sir Cumference.
+\begin{figure}[h]
+  \caption{Pun with audible word play}
+  \emph{The roundest knight at king Arthur's round table was Sir Cumference.}
+ \label{sircumference}
+\end{figure}
+
+In Figure~\ref{sircumference}, the word play of the phrase comes out when it is spoken. In this case, the Knight's name 'Sir Cumference' becomes a homophone with 'circumference'.
+A stretch goal for this research could be to process text with text to speech software, and then back again from the generated audio, back into text. If the transformed text
+differs from the input text, it could be indicative of audible word play. Of course this technique has its difficulties, and depends upon the quality of the text to speech, and speech to text synthesizers.
+
+
