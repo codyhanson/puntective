@@ -1,0 +1,25 @@
+{
+  "phrases":[
+    {"pun": true, "text":"Did you hear about the guy whose whole left side was cut off? He's all right now."},
+    {"pun": true, "text":"I'm reading a book about anti-gravity. It's impossible to put down."},
+    {"pun": true, "text":"I'm glad I know sign language, it's pretty handy."},
+    {"pun": true, "text":"Atheism is a non-prophet organization."},
+    {"pun": true, "text":"Don't trust people that do acupuncture, they're back stabbers."},
+    {"pun": true, "text":"A new type of broom came out, it is sweeping the nation."},
+    {"pun": true, "text":"There was once a cross-eyed teacher who couldn't control his pupils."},
+    {"pun": true, "text":"The shoemaker did not deny his apprentice anything he needed. He gave his awl."},
+    {"pun": true, "text":"The one who invented the door knocker got a No-bell prize."},
+    {"pun": true, "text":"I relish the fact that you've mustard the strength to ketchup to me."},
+    {"pun": false, "text":"These pretzels are making me thirsty"},
+    {"pun": false, "text":"What me worry?"},
+    {"pun": false, "text":"To be, or not to be, that is the question."},
+    {"pun": false, "text":"Do you guys want to go get some dinner? I am starving."},
+    {"pun": false, "text":"Why did the chicken cross the road? To get to the other side."},
+    {"pun": false, "text":"Ask not what your country can do for you, but what you can do for your country"},
+    {"pun": false, "text":"That's one small step for man, one giant leap for mankind"},
+    {"pun": false, "text":"Houston, we have a problem"},
+    {"pun": false, "text":"The wagon is red, and I like to ride around in it."},
+    {"pun": false, "text":"To infinity, and beyond"},
+    {"pun": false, "text":"Have you called your grandmother lately? I bet she misses you."}
+  ]
+}
