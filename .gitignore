@@ -136,3 +136,6 @@ TSWLatexianTemp*
 #virtualenv?
 *.Python
 include/
+
+#jetbrains
+.idea/
