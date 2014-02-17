@@ -115,6 +115,10 @@ nosetests.xml
 # xindy
 *.xdy
 
+##########################
+#Cody's stuff
+##########################
+
 #latexian
 *.synctex
 TSWLatexianTemp*
@@ -122,3 +126,13 @@ TSWLatexianTemp*
 
 #some mac thing?
 .DS_store
+
+#vim
+*.swp
+
+#our sqlite dbs
+*.db
+
+#virtualenv?
+*.Python
+include/
