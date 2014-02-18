@@ -139,3 +139,7 @@ include/
 
 #jetbrains
 .idea/
+
+#nltk datafiles
+#to re download, import nltk, nltk.download()
+dataset/nltk_data/

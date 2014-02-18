@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from Puntective import Puntective
 import json
 
