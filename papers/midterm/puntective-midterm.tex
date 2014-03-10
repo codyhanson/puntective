@@ -1,8 +1,15 @@
+%AAAI Style
 \documentclass[letterpaper]{article}
 \usepackage{aaai}
 \usepackage{times}
 \usepackage{helvet}
 \usepackage{courier}
+
+%For framing figures
+\usepackage{mdframed}
+
+%for listing source code and other files
+\usepackage{listings}
 
 \begin{document}
 
@@ -17,7 +24,7 @@ chanson@uccs.edu}
 \begin{quote}
 Puns and wordplay are easy for humans to comprehend, but difficult for computer programs.
 With the right algorithm, perhaps computers could mimic the way that humans can make connections between words, sounds, the current social setting, all while drawing from deep knowledge bases. 
-This research proposes a set of heuristics and techniques for allowing a computer to assign a 'pun confidence score' to a piece of text.
+This research proposes a set of heuristics, techniques, and enabling data structures for allowing a computer to assign a `pun confidence score' to a piece of text.
 \end{quote}
 \end{abstract}
 
@@ -25,7 +32,9 @@ This research proposes a set of heuristics and techniques for allowing a compute
 \input{relatedwork}
 \input{methodology}
 \input{evaluation}
+\input{futurework}
 \input{conclusion}
+
 
 \bibliography{citations} 
 \bibliographystyle{aaai}\end{document}
