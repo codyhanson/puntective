@@ -10,10 +10,12 @@ In order to maximize development speed, and focus on actually solving the proble
 A characteristic of puns that the authors have noticed is that they can sometimes contain `odd' hyphenations, or more precisely, hyphenations of words that are not commonly seen.
 
 \begin{figure}[h]
-  \caption{Puns with Odd Hyphenations}
+\begin{mdframed}
   \emph{Atheism is a non-prophet organization.}
   \emph{A bicycle can't stand on its own because it is two-tired.}
+  \caption{Puns with Odd Hyphenations}
  \label{oddhyphen}
+\end{mdframed}
 \end{figure}
 
 In Figure~\ref{oddhyphen}, `non-prophet' (rather than `non-profit') and `two-tired' (rather than `too-tired') are hyphenations which most humans would deem as atypical. My idea would be to look for hyphenated phrases in a dictionary, or other datastore of figures of speech, and if the phrase isn't found, then we can perhaps make the assumption that it is a form of wordplay. 
@@ -67,5 +69,50 @@ In Figure~\ref{punmutation} it can be seen that `Wiener'  is one letter removed 
 In Figure~\ref{sircumference}, the word play of the phrase comes out when it is spoken. In this case, the Knight's name `Sir Cumference' becomes a homophone with `circumference'.
 A stretch goal for this research could be to process text with text to speech software, and then back again from the generated audio, back into text. If the transformed text
 differs from the input text, it could be indicative of audible word play. Of course this technique has its difficulties, and depends upon the quality of the text to speech, and speech to text synthesizers.
+
+\section{A Reuseable Graph Data Structure}
+
+An hypothesis that I have is that a graph data structure could be the best way for a computer program to catalogue and make use of connections between words in humorous text. As humans automatically maintain a mapping of incongruities, relationships, and connections between parts of a sentence, a graph could be constructed to represent the state of the analysis that a computer makes against a piece of text. 
+
+The graph would have different types of nodes and edges, depending on what is being represented. For example, there would be a class of nodes that represent elements of the text under analysis, and there would also be nodes that represent `commonalities' between parts of the text. An example of a commonality could be a related subject between two words, such as `sports' between the elements `ball' and `score'. Another type of node could be 'parts of speech' information, which would allow different analytic modules to categorize parts of the sentence as verbs, adjectives, nouns, or as being part of a figure of speech. Adding this extra information could be required for more advanced humor detecting heuristics.
+
+While in normal graphs, the edges don't necessarily carry much data of their own, the edges between nodes in this system are important because they define many different types of relationships between words. Some examples of different types of edges could be `homophone' edges denoting that two nodes are homophones of each other, or a 'figure of speech' edge which denotes that several nodes belong to another `figure of speech' node, denoting an idiomatic use of language.
+
+\begin{center}
+\begin{figure}[]
+  \includegraphics[keepaspectratio=true, scale=.25]{pun-graph-example.png}
+  \caption{A Decorated Pun Graph}
+\end{figure}
+\end{center}
+
+\subsection{Motivation}
+
+By building an extensible and easy to use framework, the door will be opened for further research by other scholars to apply their new and novel heuristics to further decorate the graph. The graph data structure is also totally heuristic agnostic, and therefore doesn't limit what other researchers could try.
+
+\section{Tools and Datasets}
+
+The language of choice for implementation is Python, due to its rich set of libraries, object oriented design support, and ability to create rapid prototypes. It is also well regarded in the scientific community, and easy to learn to use, without the intricacies of learning how to use a C or Java compiler. There is also an powerful library for Python called the Natural Language Toolkit \cite{NLTK}. This provides easy access to libraries that can be used for parsing sentences and building heuristics. It also provides an easy to use interface to Wordnet \cite{wordnet}.
+
+The input data for my development tasks is a small set of puns found on the internet, as well as a set of sentences that are not considered humorous. Due to the small size of the dataset, it is primarily intended for use as development test cases, rather than an exhaustive study or benchmark of this system.
+
+\section{Current Progress}
+
+So far I have designed and outlined the classes for the Pun Graph data structure, and built the simple `analysis engine' that will be used to decorate the graph. I have implemented one Pun heuristic which I will use for initial tests of the data structure, the `homophone' heuristic. This heuristic posits that the presence of homophones makes the text more likely to be a pun.
+
+I have designed two easy ways to run the program. One way is the `automated batch input' method, which reads data from a set of files and automatically does the processing. The other method is an interactive prompt which allows the user to input arbitrary text to test the algorithms on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
