@@ -2,9 +2,7 @@
 \section{Proposed Methodology and Heuristics}
 The first step will be to read in the words of the text under examination. The first naive approach will to just count the frequency of each word in a `bag of words' approach. This will be simple to implement initially, and won't require deep knowledge of natural language processing (NLP) algorithms that would be required to parse the sentence into a tree-like structure. Once the bag of words is constructed we can apply several proposed heuristics.
 
-If the word frequency counting proves to not be powerful enough to capture the essence of the text, NLP algorithms such as those demonstrated by \cite{stanfordparser} will be researched in order to augment the approach. 
-
-In order to maximize development speed, and focus on actually solving the problems, we will use simple console based programs that leverage a scripting language such as Python. If needed, we will organize our backing data into a SQLite database, to minimize complexity and enable easy sharing with other academics. SQLite will also provide for a powerful querying mechanism while implementing code.
+If the word frequency counting proves to not be powerful enough to capture the essence of the text, NLP algorithms such as those demonstrated by \cite{stanfordparser} will be researched in order to augment the approach. This would help to determine the meaning of a word, which in the english language is often determined by the context within a sentence.
 
 \subsection{Odd Hyphenations}
 A characteristic of puns that the authors have noticed is that they can sometimes contain `odd' hyphenations, or more precisely, hyphenations of words that are not commonly seen.
@@ -72,18 +70,46 @@ differs from the input text, it could be indicative of audible word play. Of cou
 
 \section{A Reuseable Graph Data Structure}
 
-An hypothesis that I have is that a graph data structure could be the best way for a computer program to catalogue and make use of connections between words in humorous text. As humans automatically maintain a mapping of incongruities, relationships, and connections between parts of a sentence, a graph could be constructed to represent the state of the analysis that a computer makes against a piece of text. 
+An hypothesis that  we propose is that a graph data structure could be the best way for a computer program to catalogue and make use of connections between words in humorous text. As humans automatically maintain a mapping of incongruities, relationships, and connections between parts of a sentence, a graph could be constructed to represent the state of the analysis that a computer makes against a piece of text. 
 
 The graph would have different types of nodes and edges, depending on what is being represented. For example, there would be a class of nodes that represent elements of the text under analysis, and there would also be nodes that represent `commonalities' between parts of the text. An example of a commonality could be a related subject between two words, such as `sports' between the elements `ball' and `score'. Another type of node could be 'parts of speech' information, which would allow different analytic modules to categorize parts of the sentence as verbs, adjectives, nouns, or as being part of a figure of speech. Adding this extra information could be required for more advanced humor detecting heuristics.
 
-While in normal graphs, the edges don't necessarily carry much data of their own, the edges between nodes in this system are important because they define many different types of relationships between words. Some examples of different types of edges could be `homophone' edges denoting that two nodes are homophones of each other, or a 'figure of speech' edge which denotes that several nodes belong to another `figure of speech' node, denoting an idiomatic use of language.
+While in normal graphs, the edges don't necessarily carry much data of their own, the edges between nodes in this system are important because they define many different types of relationships between words. Some examples of different types of edges could be `homophone' edges denoting that two nodes are homophones of each other, or a 'figure of speech' edge which denotes that several nodes belong to another `figure of speech' node, denoting an idiomatic use of language. See Figure~\ref{pungraph} for an example of a Pun Graph that has been decorated by various heuristics.
 
 \begin{center}
-\begin{figure}[]
-  \includegraphics[keepaspectratio=true, scale=.25]{pun-graph-example.png}
+\begin{figure}[h]
+  \includegraphics[keepaspectratio=true, scale=.35]{pun-graph-example.png}
   \caption{A Decorated Pun Graph}
+   \label{pungraph}
 \end{figure}
 \end{center}
+
+\subsection{Generalized scoring}
+Because all edges and nodes inherit from the base classes that I will design, it makes the implementation of summing the contributions of all heuristics easy. To illustrate the general idea of how the system will use the graph, please refer to Algorithm~\ref{graphalgorithm}. The list of heuristics to be ran could potentially be a dynamically generated set, and the number of rounds of analysis could be bound by a timer or other upper limit, to ensure that the computation happens within a timely manner, or perhaps continues longer to become more rigorous.
+
+\begin{algorithm}[h]
+\begin{mdframed}
+ \KwData{Input $text$}
+ \KwData{Pun Graph $G$}
+ \KwResult{Pun Score for the text, cumulatively assigned by all heuristics}
+ Initialize graph $G$ with the Input $text$\;
+ Initialize $score = 0$\;
+ \While{there are heuristics left to run}{
+      run heuristic on graph $G$\;
+      update graph $G$ with additional nodes and edges\;
+      next heuristic;
+    }
+  \For{$node \in G$}{
+	 $score$ = $score$ + contribution of $node$\;
+  }  
+ \For{$edge \in G$}{
+	 $score$ = $score$ + contribution of $edge$\;
+  }  
+  output $score$;
+   \end{mdframed}
+   \caption{Algorithm for integrating the Pun Graph with arbitrary heuristics}
+ \label{graphalgorithm}
+\end{algorithm}
 
 \subsection{Motivation}
 
@@ -100,19 +126,3 @@ The input data for my development tasks is a small set of puns found on the inte
 So far I have designed and outlined the classes for the Pun Graph data structure, and built the simple `analysis engine' that will be used to decorate the graph. I have implemented one Pun heuristic which I will use for initial tests of the data structure, the `homophone' heuristic. This heuristic posits that the presence of homophones makes the text more likely to be a pun.
 
 I have designed two easy ways to run the program. One way is the `automated batch input' method, which reads data from a set of files and automatically does the processing. The other method is an interactive prompt which allows the user to input arbitrary text to test the algorithms on.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
