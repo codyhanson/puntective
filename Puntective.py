@@ -1,23 +1,27 @@
 
 import homophone
 import hyphenations
-
+from py2neo import neo4j, node, rel
 
 class Puntective:
 
     def __init__(self, phrase):
+        self.graph_db = neo4j.GraphDatabaseService("http://localhost:7474/db/data/")
+        #empty out the database
+        self.graph_db.clear()
         self.phrase = phrase
-        self.words = {}
-        self.points = []
 
     def parse(self):
-        #split the phrase into words, and count them.
+        #split the phrase into words, and add them as phrase nodes
+        previous_node = None
+        p = 0
         for word in self.phrase.split():
-            #todo, better way to do this?
-            if word in self.words:
-                self.words[word] += 1
+            p += 1
+            if previous_node is not None:
+                #add word as a node, with linkage from previous node
+                previous_node, rel = self.graph_db.create({"type":"word", "word":word, "points":p}, (previous_node, "NEXT", 0, {"points":p}))
             else:
-                self.words[word] = 1 
+                previous_node, = self.graph_db.create({"type":"word", "word":word, "points":p})
 
     def print_counts(self):
         for word in self.words:
@@ -29,19 +33,17 @@ class Puntective:
     def analyze(self, steps):
         for step in steps:
             if step == 'homophone':
-                self.points.append(homophone.analyze(self.words))
-            elif step == 'hyphenations':
-                self.points.append(hyphenations.analyze(self.words))
-            elif step == 'hyphenations':
-                self.points.append(hyphenations.analyze(self.words))
+                homophone.analyze(self.graph_db)
+            # elif step == 'hyphenations':
+            #     self.points.append(hyphenations.analyze(self.words))
+            # elif step == 'hyphenations':
+            #     self.points.append(hyphenations.analyze(self.words))
 
 
-    #takes the points list from the different steps and computes a score for the phrase
-    #that this Puntective instance analyzed.
+    #over all the nodes and edges in the graph, sum the point values
     def compute_score(self):
-        total = 0
-        for point_value in self.points:
-            total += point_value
-        return total
+        points_query = neo4j.CypherQuery(self.graph_db, "MATCH (n)-[r]->() RETURN SUM(n.points), SUM(r.points)")
+        node_points, edge_points = points_query.execute()[0]
+        return node_points + edge_points
 
 
