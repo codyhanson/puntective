@@ -3,8 +3,9 @@ import hyphenations
 import definition_linkage
 import part_of_speech
 from py2neo import neo4j, node, rel
+import re
 
-
+word_pattern = re.compile('^([\w0-9\'-]+)')
 class Puntective:
     def __init__(self, phrase):
         self.graph_db = neo4j.GraphDatabaseService("http://localhost:7474/db/data/")
@@ -17,6 +18,9 @@ class Puntective:
         previous_node = None
         p = 0
         for word in self.phrase.split():
+            #trims punctuation marks off the ends of words.
+            m = re.match(word_pattern,word)
+            word = m.group(1)
             p += 1
             if previous_node is not None:
                 #add word as a node, with linkage from previous node
