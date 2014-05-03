@@ -1,10 +1,11 @@
-
 import homophone
 import hyphenations
+import definition_linkage
+import part_of_speech
 from py2neo import neo4j, node, rel
 
-class Puntective:
 
+class Puntective:
     def __init__(self, phrase):
         self.graph_db = neo4j.GraphDatabaseService("http://localhost:7474/db/data/")
         #empty out the database
@@ -19,13 +20,14 @@ class Puntective:
             p += 1
             if previous_node is not None:
                 #add word as a node, with linkage from previous node
-                previous_node, rel = self.graph_db.create({"type":"word", "word":word, "points":p}, (previous_node, "NEXT", 0, {"points":p}))
+                previous_node, rel = self.graph_db.create({"type": "word", "name": word, "points": p},
+                                                          (previous_node, "NEXTWORD", 0, {"points": p}))
             else:
-                previous_node, = self.graph_db.create({"type":"word", "word":word, "points":p})
+                previous_node, = self.graph_db.create({"type": "word", "name": word, "points": p})
 
     def print_counts(self):
         for word in self.words:
-            print "{0} - {1}".format(word, self.words[word])
+            print "{0} - {1}".format(word, self.words[name])
 
     #steps is an array of the different rounds of analysis to be performed.
     #each one will analyzes the phrase with a different technique.
@@ -34,10 +36,12 @@ class Puntective:
         for step in steps:
             if step == 'homophone':
                 homophone.analyze(self.graph_db)
-            # elif step == 'hyphenations':
-            #     self.points.append(hyphenations.analyze(self.words))
-            # elif step == 'hyphenations':
-            #     self.points.append(hyphenations.analyze(self.words))
+            elif step == 'hyphenation':
+                hyphenations.analyze(self.graph_db)
+            elif step == 'pos':
+                part_of_speech.analyze(self.graph_db)
+            elif step == 'definition':
+                definition_linkage.analyze(self.graph_db)
 
 
     #over all the nodes and edges in the graph, sum the point values
