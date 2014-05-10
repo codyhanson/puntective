@@ -13,4 +13,4 @@ for phrase in phrases["phrases"]:
     p.analyze(['hyphenation'])
     p.analyze(['definition'])
     points = p.compute_score()
-    print "Phrase (Pun?: {2}): {0} got {1} points".format(phrase["text"], points, phrase["pun"])
+    print "Phrase (Pun?: {2}):{1} points - {0} ".format(phrase["text"], points, phrase["pun"])

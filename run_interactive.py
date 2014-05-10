@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from Puntective import Puntective
 
-
 import fileinput
 #import cmd
 import sys

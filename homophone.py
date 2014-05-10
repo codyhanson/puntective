@@ -20,7 +20,6 @@ def analyze(graph_db):
         cursor.execute("SELECT sounds_like FROM homophones WHERE key_word=?", (words[i],))
         rows = cursor.fetchall()
         for homophone in rows:
-            print "Found homophone in phrase {0} - {1}. adding homophone edge with points".format(words[i], homophone[0])
             graph_db.create({"type":"homophone", "name":homophone[0], "points":base_points},
                             (word_nodes.data[i][0], "HOMOPHONE", 0, {"points":base_points}))
 

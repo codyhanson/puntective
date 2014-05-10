@@ -4,7 +4,7 @@ import re
 
 
 point_scale_factor = 1
-base_points = 10
+base_points = 2
 
 hyphen_pattern = re.compile('(.+?)-(.+)')
 

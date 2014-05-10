@@ -21,4 +21,4 @@ def analyze(graph_db):
         if len(pos_count) is not 0:
             pos = max(pos_count.iteritems(), key=operator.itemgetter(1))[0]
             graph_db.create({"type": "partofspeech", "name": pos, "points": 0},
-                (word_nodes.data[i][0], "POS", 0, {"points": 0}))
+                            (word_nodes.data[i][0], "POS", 0, {"points": 0}))

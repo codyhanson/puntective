@@ -21,7 +21,6 @@ class Puntective:
             #trims punctuation marks off the ends of words.
             m = re.match(word_pattern,word)
             word = m.group(1)
-            p += 1
             if previous_node is not None:
                 #add word as a node, with linkage from previous node
                 previous_node, rel = self.graph_db.create({"type": "word", "name": word, "points": p},
