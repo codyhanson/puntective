@@ -6,7 +6,7 @@ conn = db.connect("./dataset/puntective.db")
 conn.text_factory = str
 
 point_scale_factor = 1
-base_points = 10
+base_points = 5
 
 #this routine will scan each word in the phrase, and if it has a homophone, attach it via an edge.
 def analyze(graph_db):

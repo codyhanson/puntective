@@ -1,8 +1,10 @@
 
 \section{Methodology and Heuristics}
-The first step will be to read in the words of the text under examination. The first naive approach will to just count the frequency of each word in a `bag of words' approach. This will be simple to implement initially, and won't require deep knowledge of natural language processing (NLP) algorithms that would be required to parse the sentence into a tree-like structure. Once the bag of words is constructed we can apply several proposed heuristics.
+They analysis process must first populate the pun graph with the phrase under test. The phrase is read in, and split on whitespace, with punctuation marks such as commas and periods being stripped. Then `word' nodes are created with `NEXT' edges between them. This is the skeleton, and core of the graph. 
 
-If the word frequency counting proves to not be powerful enough to capture the essence of the text, NLP algorithms such as those demonstrated by \cite{stanfordparser} will be researched in order to augment the approach. This would help to determine the meaning of a word, which in the english language is often determined by the context within a sentence.
+Next a series of heuristics are applied, each having the pun graph at their disposal. In this implementation, the order of execution of heuristics is important, as the ones that come later have more nodes and edges to consider, and we can build up complexity as we go. It makes sense to execute more elemental analyses first (such as labeling parts of speech), since they don't  depend on anything from other heuristics.
+
+The following sections describe some ideas for heuristics, some of which were implemented and tested in the results section.
 
 \subsection{Odd Hyphenations}
 A characteristic of puns that the authors have noticed is that they can sometimes contain `odd' hyphenations, or more precisely, hyphenations of words that are not commonly seen.
@@ -79,7 +81,7 @@ While in normal graphs, the edges don't necessarily carry much data of their own
 \begin{center}
 \begin{figure}[h]
   \includegraphics[keepaspectratio=true, scale=.35]{pun-graph-example.png}
-  \caption{A Decorated Pun Graph}
+  \caption{Concept - A Decorated Pun Graph}
    \label{pungraph}
 \end{figure}
 \end{center}
@@ -112,17 +114,14 @@ Because all edges and nodes inherit from the base classes that I will design, it
 \end{algorithm}
 
 \subsection{Motivation}
+The idea of a graph to encode relationships between words and pieces of knowledge seems like an easy to grasp concept that has limitless potential for further research and extensibility. Any research could add their own types of data to a graph, and learn to take advantage of the encoded information in new and exciting ways.  
 
-By building an extensible and easy to use framework, the door will be opened for further research by other scholars to apply their new and novel heuristics to further decorate the graph. The graph data structure is also totally heuristic agnostic, and therefore doesn't limit what other researchers could try.
-
-\section{Tools and Datasets}
-
+\section{Tools}
 The language of choice for implementation is Python, due to its rich set of libraries, object oriented design support, and ability to create rapid prototypes. It is also well regarded in the scientific community, and easy to learn to use, without the intricacies of learning how to use a C or Java compiler. There is also an powerful library for Python called the Natural Language Toolkit \cite{NLTK}. This provides easy access to libraries that can be used for parsing sentences and building heuristics. It also provides an easy to use interface to Wordnet \cite{wordnet}.
 
+For the graph data structure, rather than build my own graph implementation, I found that using an existing product called Neo4J to be advantageous. Neo4J \cite{neo4j} is a graph database that provides many benefits of a traditional SQL database, while being designed to encode data in nodes and edges, rather than tables. Neo4J provides a SQL-like query language called Cypher. This makes it easy to query for a subset of nodes and edges, and easily add to a graph. Neo4J is easily consumable via many programming languages, including Python.
+
+\section{Datasets}
 The input data for my development tasks is a small set of puns found on the internet, as well as a set of sentences that are not considered humorous. Due to the small size of the dataset, it is primarily intended for use as development test cases, rather than an exhaustive study or benchmark of this system.
 
-\section{Current Progress}
-
-So far I have designed and outlined the classes for the Pun Graph data structure, and built the simple `analysis engine' that will be used to decorate the graph. I have implemented one Pun heuristic which I will use for initial tests of the data structure, the `homophone' heuristic. This heuristic posits that the presence of homophones makes the text more likely to be a pun.
-
-I have designed two easy ways to run the program. One way is the `automated batch input' method, which reads data from a set of files and automatically does the processing. The other method is an interactive prompt which allows the user to input arbitrary text to test the algorithms on.
+The format of the data is JSON, so that it can be easily parsed by the analysis programs. JSON also makes it easy to add metadata to information, such as a list of tags that encode information about the phrase, as well as other properties that could be helpful. This is a more elegant technique than using a comma separated value file, and is less likely to degrade over time because of the use of key value pairs.

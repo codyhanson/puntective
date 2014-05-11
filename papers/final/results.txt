@@ -1,0 +1,29 @@
+Phrase (Pun?: True):185 points - Did you hear about the guy whose whole left side was cut off? He's all right now.
+Phrase (Pun?: True):64 points - I'm reading a book about anti-gravity. It's impossible to put down.
+Phrase (Pun?: True):65 points - I'm glad I know sign language, it's pretty handy.
+Phrase (Pun?: True):15 points - Atheism is a non-prophet organization.
+Phrase (Pun?: True):115 points - Don't trust people that do acupuncture, they're back stabbers.
+Phrase (Pun?: True):45 points - A new type of broom came out, it is sweeping the nation.
+Phrase (Pun?: True):21 points - There was once a cross-eyed teacher who couldn't control his pupils.
+Phrase (Pun?: True):65 points - The shoemaker did not deny his apprentice anything he needed. He gave his awl.
+Phrase (Pun?: True):68 points - The one who invented the door knocker got a No-bell prize.
+Phrase (Pun?: True):160 points - I relish the fact that you've mustard the strength to ketchup to me.
+Phrase (Pun?: False):85 points - These pretzels are making me thirsty
+Phrase (Pun?: False):20 points - What me worry?
+Phrase (Pun?: False):160 points - To be, or not to be, that is the question.
+Phrase (Pun?: False):155 points - Do you guys want to go get some dinner? I am starving.
+Phrase (Pun?: False):105 points - Why did the chicken cross the road? To get to the other side.
+Phrase (Pun?: False):515 points - Ask not what your country can do for you, but what you can do for your country
+Phrase (Pun?: False):150 points - That's one small step for man, one giant leap for mankind
+Phrase (Pun?: False):35 points - Houston, we have a problem
+Phrase (Pun?: False):100 points - The wagon is red, and I like to ride around in it.
+Phrase (Pun?: False):0 points - To infinity, and beyond
+Phrase (Pun?: False):160 points - Have you called your grandmother lately? I bet she misses you.
+Pun average:80.3
+Pun median:65.0
+Pun max:185
+Pun min:15
+Non-Pun average:135.0
+Non-Pun median:105.0
+Non-Pun max:515
+Non-Pun min:0
